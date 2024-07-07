@@ -1,5 +1,10 @@
 #include QMK_KEYBOARD_H
 
+// #include "features/achordion.h"
+
+// void matrix_scan_user(void) {
+//  achordion_task();
+// }
 
 /* THIS FILE WAS GENERATED!
  *
@@ -8,13 +13,44 @@
  */
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-        [0] = LAYOUT(KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_GRV, KC_NO, KC_Q, KC_W, KC_F, KC_P, KC_B, KC_J, KC_L, KC_U, KC_Y, KC_QUOT, KC_QUOT, KC_NO, LGUI_T(KC_A), LALT_T(KC_R), LCTL_T(KC_S), LSFT_T(KC_T), KC_G, KC_M, RSFT_T(KC_N), RCTL_T(KC_E), RALT_T(KC_I), RGUI_T(KC_O), KC_SCLN, KC_NO, KC_Z, KC_X, KC_C, ALL_T(KC_D), KC_V, KC_LBRC, KC_RBRC, KC_K, ALL_T(KC_H), KC_COMM, KC_DOT, KC_SLSH, KC_NO, LT(3,KC_NO), LT(2,KC_ESC), LT(1,KC_SPC), LT(4,KC_TAB), LT(4,KC_ENT), LT(5,KC_BSPC), LT(6,KC_DEL), KC_NO),
-        [1] = LAYOUT(KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_RCBR, KC_LPRN, KC_RPRN, KC_LBRC, KC_RBRC, KC_NO, KC_NO, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_SCLN, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, HYPR(KC_NO), KC_NO, KC_NO, KC_NO, KC_NO, KC_PGDN, KC_PGUP, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_ENT, KC_BSPC, KC_DEL, KC_NO),
+        [0] = LAYOUT(KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_Q, KC_W, KC_F, KC_P, KC_B, KC_J, KC_L, KC_U, KC_Y, KC_MINS, KC_NO, KC_NO, LGUI_T(KC_A), LALT_T(KC_R), LCTL_T(KC_S), LSFT_T(KC_T), KC_G, KC_M, RSFT_T(KC_N), RCTL_T(KC_E), RALT_T(KC_I), RGUI_T(KC_O), KC_NO, KC_NO, KC_Z, KC_X, KC_C, ALL_T(KC_D), LT(3,KC_V), KC_LBRC, KC_RBRC, LT(6,KC_K), ALL_T(KC_H), KC_COMM, KC_DOT, KC_SLSH, KC_NO, KC_V, KC_ESC, LT(1,KC_SPC), LT(2,KC_TAB), KC_ENT, LT(5,KC_BSPC), KC_NO, KC_NO),
+        [1] = LAYOUT(KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TILD, KC_GRV, KC_PLUS, KC_PERC, KC_AMPR, KC_NO, KC_NO, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_DLR, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, HYPR(KC_NO), KC_NO, KC_NO, KC_NO, KC_CIRC, KC_PGDN, KC_PGUP, KC_ASTR, KC_HASH, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_ENT, KC_BSPC, KC_DEL, KC_NO),
         [2] = LAYOUT(KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_MPRV, KC_VOLD, KC_VOLU, KC_MNXT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_MSTP, KC_MPLY, KC_MUTE, KC_NO),
-        [3] = LAYOUT(KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, LGUI(KC_V), LGUI(KC_C), LGUI(KC_X), LGUI(KC_Z), KC_NO, KC_NO, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, HYPR(KC_NO), KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_BTN2, KC_BTN1, KC_BTN3, KC_NO),
-        [4] = LAYOUT(KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_GRV, KC_LT, KC_GT, KC_TILD, KC_NO, KC_AMPR, KC_UNDS, KC_LBRC, KC_RBRC, KC_PERC, KC_NO, KC_NO, KC_EXLM, KC_MINS, KC_PLUS, KC_EQL, KC_HASH, KC_PIPE, KC_COLN, KC_LPRN, KC_RPRN, KC_SCLN, KC_NO, KC_NO, KC_CIRC, KC_SLSH, KC_ASTR, KC_BSLS, KC_NO, KC_NO, KC_NO, KC_TILD, KC_DLR, KC_LCBR, KC_RCBR, KC_AT, KC_NO, KC_NO, KC_ESC, KC_SPC, KC_TAB, KC_ENT, KC_BSPC, KC_DEL, KC_NO),
-        [5] = LAYOUT(KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_7, KC_8, KC_9, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_4, KC_5, KC_6, KC_NO, KC_NO, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI, KC_NO, KC_NO, KC_NO, KC_1, KC_2, KC_3, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_0, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO),
+        [3] = LAYOUT(KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, HYPR(KC_NO), KC_NO, KC_NO, KC_NO, KC_BTN3, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_BTN2, KC_BTN1, KC_NO, KC_NO),
+        [4] = LAYOUT(KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_7, KC_8, KC_9, KC_PIPE, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_4, KC_5, KC_6, KC_BSLS, KC_NO, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI, KC_NO, KC_NO, KC_NO, KC_1, KC_2, KC_3, KC_AT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_0, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO),
+        [5] = LAYOUT(KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_7, KC_8, KC_9, KC_PIPE, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_4, KC_5, KC_6, KC_BSLS, KC_NO, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI, KC_NO, KC_NO, KC_NO, KC_1, KC_2, KC_3, KC_AT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_0, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO),
         [6] = LAYOUT(KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_F12, KC_F7, KC_F8, KC_F9, KC_PSCR, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_F11, KC_F4, KC_F5, KC_F6, KC_SCRL, KC_NO, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI, KC_NO, KC_NO, KC_F10, KC_F1, KC_F2, KC_F3, KC_PAUS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_SPC, KC_TAB, KC_NO, KC_NO, KC_NO, KC_NO)
+};
+
+const uint16_t PROGMEM combo_paren_open[] = {RSFT_T(KC_N), RCTL_T(KC_E), COMBO_END};
+const uint16_t PROGMEM combo_paren_close[] = {RSFT_T(KC_N), RALT_T(KC_I), COMBO_END};
+const uint16_t PROGMEM combo_brace_open[] = {KC_L, KC_U, COMBO_END};
+const uint16_t PROGMEM combo_brace_close[] = {KC_L, KC_Y, COMBO_END};
+const uint16_t PROGMEM combo_bracket_open[] = {ALL_T(KC_H), KC_COMM, COMBO_END};
+const uint16_t PROGMEM combo_bracket_close[] = {ALL_T(KC_H), KC_DOT, COMBO_END};
+const uint16_t PROGMEM combo_colon[] = {RCTL_T(KC_E), RALT_T(KC_I), COMBO_END};
+const uint16_t PROGMEM combo_semi_colon[] = {KC_U, KC_Y, COMBO_END};
+const uint16_t PROGMEM combo_equals[] = {KC_COMM, KC_DOT, COMBO_END};
+const uint16_t PROGMEM combo_exclamation[] = {RSFT_T(KC_N), RGUI_T(KC_O), COMBO_END};
+
+const uint16_t PROGMEM combo_esc[] = {LCTL_T(KC_S), LSFT_T(KC_T), COMBO_END};
+const uint16_t PROGMEM combo_quote[] = {KC_P, KC_F, COMBO_END};
+const uint16_t PROGMEM combo_double_quote[] = {KC_F, KC_W, COMBO_END};
+
+combo_t key_combos[] = {
+    COMBO(combo_paren_open, KC_LPRN),
+    COMBO(combo_paren_close, KC_RPRN),
+    COMBO(combo_brace_open, KC_LCBR),
+    COMBO(combo_brace_close, KC_RCBR),
+    COMBO(combo_bracket_open, KC_LBRC),
+    COMBO(combo_bracket_close, KC_RBRC),
+    COMBO(combo_colon, KC_COLN),
+    COMBO(combo_semi_colon, KC_SCLN),
+    COMBO(combo_equals, KC_EQUAL),
+    COMBO(combo_esc, KC_ESC),
+    COMBO(combo_exclamation, KC_EXCLAIM),
+    COMBO(combo_quote, KC_QUOTE),
+    COMBO(combo_double_quote, KC_DOUBLE_QUOTE),
 };
 
 //SSD1306 OLED update loop, make sure to enable OLED_ENABLE=yes in rules.mk
@@ -55,6 +91,8 @@ bool oled_task_user(void) {
 #endif // OLED_ENABLE
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+  // if (!process_achordion(keycode, record)) { return false; }
+
   if (record->event.pressed) {
 #ifdef OLED_ENABLE
     set_keylog(keycode, record);
