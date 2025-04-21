@@ -1,6 +1,7 @@
 // todo
 // next/previous tab in firefox (cmd + left)
 // screenshots / videos
+// qmk info.json vs keyboard.json output wrong
 #include QMK_KEYBOARD_H
 #include "features/achordion.h"
 

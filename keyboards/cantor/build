@@ -1,0 +1,94 @@
+QMK Firmware 0.28.6
+⚠ cantor: SERIAL_DRIVER in rules.mk is overwriting split.serial.driver in info.json
+⚠ cantor: SPLIT_KEYBOARD in rules.mk is overwriting split.enabled in info.json
+⚠ cantor: Feature bootmagic is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True}) and rules.mk (True). The rules.mk value wins.
+⚠ cantor: Feature extrakey is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True}) and rules.mk (True). The rules.mk value wins.
+⚠ cantor: BOOTMAGIC_COLUMN_RIGHT in config.h is overwriting split.bootmagic.matrix.1 in info.json
+⚠ cantor: BOOTMAGIC_ROW_RIGHT in config.h is overwriting split.bootmagic.matrix.0 in info.json
+Making [1mcantor[0m with keymap [1mjp[0m
+
+⚠ cantor: SERIAL_DRIVER in rules.mk is overwriting split.serial.driver in info.json
+⚠ cantor: SPLIT_KEYBOARD in rules.mk is overwriting split.enabled in info.json
+⚠ cantor: Feature bootmagic is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True}) and rules.mk (True). The rules.mk value wins.
+⚠ cantor: Feature extrakey is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True}) and rules.mk (True). The rules.mk value wins.
+⚠ cantor: BOOTMAGIC_COLUMN_RIGHT in config.h is overwriting split.bootmagic.matrix.1 in info.json
+⚠ cantor: BOOTMAGIC_ROW_RIGHT in config.h is overwriting split.bootmagic.matrix.0 in info.json
+⚠ cantor: SERIAL_DRIVER in rules.mk is overwriting split.serial.driver in info.json
+⚠ cantor: SPLIT_KEYBOARD in rules.mk is overwriting split.enabled in info.json
+⚠ cantor: Feature bootmagic is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True}) and rules.mk (True). The rules.mk value wins.
+⚠ cantor: Feature extrakey is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True}) and rules.mk (True). The rules.mk value wins.
+⚠ cantor: BOOTMAGIC_COLUMN_RIGHT in config.h is overwriting split.bootmagic.matrix.1 in info.json
+⚠ cantor: BOOTMAGIC_ROW_RIGHT in config.h is overwriting split.bootmagic.matrix.0 in info.json
+arm-none-eabi-gcc (Homebrew ARM GCC 8.5.0_2) 8.5.0
+Copyright (C) 2018 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Size before:
+   text	   data	    bss	    dec	    hex	filename
+      0	  38392	      0	  38392	   95f8	cantor_jp.bin
+
+Generating: .build/obj_cantor_jp/src/community_modules.h                                            [33;01m[WARNINGS][0m
+ |
+ | ⚠ cantor: SERIAL_DRIVER in rules.mk is overwriting split.serial.driver in info.json
+ | ⚠ cantor: SPLIT_KEYBOARD in rules.mk is overwriting split.enabled in info.json
+ | ⚠ cantor: Feature bootmagic is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True}) and rules.mk (True). The rules.mk value wins.
+ | ⚠ cantor: Feature extrakey is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True}) and rules.mk (True). The rules.mk value wins.
+ | ⚠ cantor: BOOTMAGIC_COLUMN_RIGHT in config.h is overwriting split.bootmagic.matrix.1 in info.json
+ | ⚠ cantor: BOOTMAGIC_ROW_RIGHT in config.h is overwriting split.bootmagic.matrix.0 in info.json
+ |
+Generating: .build/obj_cantor_jp/src/community_modules.c                                            [33;01m[WARNINGS][0m
+ |
+ | ⚠ cantor: SERIAL_DRIVER in rules.mk is overwriting split.serial.driver in info.json
+ | ⚠ cantor: SPLIT_KEYBOARD in rules.mk is overwriting split.enabled in info.json
+ | ⚠ cantor: Feature bootmagic is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True}) and rules.mk (True). The rules.mk value wins.
+ | ⚠ cantor: Feature extrakey is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True}) and rules.mk (True). The rules.mk value wins.
+ | ⚠ cantor: BOOTMAGIC_COLUMN_RIGHT in config.h is overwriting split.bootmagic.matrix.1 in info.json
+ | ⚠ cantor: BOOTMAGIC_ROW_RIGHT in config.h is overwriting split.bootmagic.matrix.0 in info.json
+ |
+Generating: .build/obj_cantor_jp/src/community_modules_introspection.c                              [33;01m[WARNINGS][0m
+ |
+ | ⚠ cantor: SERIAL_DRIVER in rules.mk is overwriting split.serial.driver in info.json
+ | ⚠ cantor: SPLIT_KEYBOARD in rules.mk is overwriting split.enabled in info.json
+ | ⚠ cantor: Feature bootmagic is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True}) and rules.mk (True). The rules.mk value wins.
+ | ⚠ cantor: Feature extrakey is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True}) and rules.mk (True). The rules.mk value wins.
+ | ⚠ cantor: BOOTMAGIC_COLUMN_RIGHT in config.h is overwriting split.bootmagic.matrix.1 in info.json
+ | ⚠ cantor: BOOTMAGIC_ROW_RIGHT in config.h is overwriting split.bootmagic.matrix.0 in info.json
+ |
+Generating: .build/obj_cantor_jp/src/community_modules_introspection.h                              [33;01m[WARNINGS][0m
+ |
+ | ⚠ cantor: SERIAL_DRIVER in rules.mk is overwriting split.serial.driver in info.json
+ | ⚠ cantor: SPLIT_KEYBOARD in rules.mk is overwriting split.enabled in info.json
+ | ⚠ cantor: Feature bootmagic is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True}) and rules.mk (True). The rules.mk value wins.
+ | ⚠ cantor: Feature extrakey is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True}) and rules.mk (True). The rules.mk value wins.
+ | ⚠ cantor: BOOTMAGIC_COLUMN_RIGHT in config.h is overwriting split.bootmagic.matrix.1 in info.json
+ | ⚠ cantor: BOOTMAGIC_ROW_RIGHT in config.h is overwriting split.bootmagic.matrix.0 in info.json
+ |
+Generating: .build/obj_cantor_jp/src/default_keyboard.c                                             [33;01m[WARNINGS][0m
+ |
+ | ⚠ cantor: SERIAL_DRIVER in rules.mk is overwriting split.serial.driver in info.json
+ | ⚠ cantor: SPLIT_KEYBOARD in rules.mk is overwriting split.enabled in info.json
+ | ⚠ cantor: Feature bootmagic is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True}) and rules.mk (True). The rules.mk value wins.
+ | ⚠ cantor: Feature extrakey is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True}) and rules.mk (True). The rules.mk value wins.
+ | ⚠ cantor: BOOTMAGIC_COLUMN_RIGHT in config.h is overwriting split.bootmagic.matrix.1 in info.json
+ | ⚠ cantor: BOOTMAGIC_ROW_RIGHT in config.h is overwriting split.bootmagic.matrix.0 in info.json
+ |
+Generating: .build/obj_cantor_jp/src/default_keyboard.h                                             [33;01m[WARNINGS][0m
+ |
+ | ⚠ cantor: SERIAL_DRIVER in rules.mk is overwriting split.serial.driver in info.json
+ | ⚠ cantor: SPLIT_KEYBOARD in rules.mk is overwriting split.enabled in info.json
+ | ⚠ cantor: Feature bootmagic is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True}) and rules.mk (True). The rules.mk value wins.
+ | ⚠ cantor: Feature extrakey is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True}) and rules.mk (True). The rules.mk value wins.
+ | ⚠ cantor: BOOTMAGIC_COLUMN_RIGHT in config.h is overwriting split.bootmagic.matrix.1 in info.json
+ | ⚠ cantor: BOOTMAGIC_ROW_RIGHT in config.h is overwriting split.bootmagic.matrix.0 in info.json
+ |
+Compiling: quantum/keymap_introspection.c                                                           [32;01m[OK][0m
+Linking: .build/cantor_jp.elf                                                                       [32;01m[OK][0m
+Creating binary load file for flashing: .build/cantor_jp.bin                                        [32;01m[OK][0m
+Creating load file for flashing: .build/cantor_jp.hex                                               [32;01m[OK][0m
+
+Size after:
+   text	   data	    bss	    dec	    hex	filename
+      0	  38392	      0	  38392	   95f8	cantor_jp.bin
+
+Copying cantor_jp.bin to qmk_firmware folder                                                        [32;01m[OK][0m
